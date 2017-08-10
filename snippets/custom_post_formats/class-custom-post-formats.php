@@ -12,7 +12,7 @@ class Custom_Post_Formats {
 
 	function __construct( $theme ) {
 		// Load up the abstract post format class
-		include_once( 'class-custom-post-format.php' );
+		include_once( 'class-abstract-post-format.php' );
 		// Begin creating new post formats
 		include_once( 'class-custom-longform-format.php' );
 		$this->add_format( new Longform_Format() );
